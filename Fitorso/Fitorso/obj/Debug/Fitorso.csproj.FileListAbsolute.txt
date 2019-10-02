@@ -103,5 +103,9 @@ C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\Fitorso.csproj.CoreComp
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\Fitorso.csproj.CopyComplete
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\Fitorso.dll
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\Fitorso.pdb
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\Fitorso.Migrations.AddedModels.resources
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\Fitorso.csproj.GenerateResource.cache
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\Models.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\Models.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\DAL.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\IDAL.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\DAL.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\IDAL.pdb

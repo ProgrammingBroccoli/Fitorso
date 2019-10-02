@@ -1,0 +1,6 @@
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Models\bin\Debug\Models.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Models\bin\Debug\Models.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Models\obj\Debug\Models.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Models\obj\Debug\Models.pdb
