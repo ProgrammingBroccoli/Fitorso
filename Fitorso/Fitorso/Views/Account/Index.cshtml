@@ -1,0 +1,22 @@
+﻿@model Fitorso.Viewmodels.AccountViewmodel
+
+
+<link href="~/css/login.css" rel="stylesheet" />
+@using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="box">
+        <form class="content">
+            <h3>Login</h3>
+            @Html.LabelFor(m => m.User.Email, new { @class = "h4-login"})
+            @Html.TextBoxFor(m => m.User.Email, new { @class = "login-textbox" })
+            @Html.LabelFor(m => m.User.Password, new { @class = "h4-login"})
+            @Html.PasswordFor(m => m.User.Password, new { @class = "login-textbox" })
+            <br>
+            <button class="login-button">Login</button>
+
+                
+        </form>
+    </div>
+}

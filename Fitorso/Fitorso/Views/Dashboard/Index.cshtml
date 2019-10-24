@@ -1,0 +1,18 @@
+﻿@model object
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @Context.User.Claims.First(i => i.Type == System.Security.Claims.ClaimTypes.Email).Value
+</div>
+</body>
+</html>

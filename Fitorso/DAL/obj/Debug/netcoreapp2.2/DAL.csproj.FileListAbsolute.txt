@@ -1,0 +1,14 @@
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\IDAL.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\Model.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\IDAL.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\Model.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.pdb

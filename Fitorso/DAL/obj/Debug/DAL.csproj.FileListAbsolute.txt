@@ -1,9 +1,0 @@
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\DAL.dll
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\DAL.pdb
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\IDAL.dll
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\IDAL.pdb
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\DAL.csproj.CopyComplete
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\DAL.dll
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\DAL.pdb

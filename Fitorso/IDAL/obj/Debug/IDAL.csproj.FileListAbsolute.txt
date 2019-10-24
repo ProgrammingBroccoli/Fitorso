@@ -1,6 +1,0 @@
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\IDAL\bin\Debug\IDAL.dll
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\IDAL\bin\Debug\IDAL.pdb
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\IDAL\obj\Debug\IDAL.csprojAssemblyReference.cache
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\IDAL\obj\Debug\IDAL.csproj.CoreCompileInputs.cache
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\IDAL\obj\Debug\IDAL.dll
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\IDAL\obj\Debug\IDAL.pdb
