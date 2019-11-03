@@ -47,7 +47,7 @@ namespace Fitorso.Controllers
                 {
 
                 };
-
+                
                 await HttpContext.SignInAsync(
                     CookieAuthenticationDefaults.AuthenticationScheme,
                     new ClaimsPrincipal(claimsIdentity),

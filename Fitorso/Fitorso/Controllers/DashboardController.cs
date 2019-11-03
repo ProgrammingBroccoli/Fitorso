@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Fitorso.Viewmodels;
 using Logic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,11 +20,19 @@ namespace Fitorso.Controllers
             logic = new UserLogic();
             _httpContextAccessor = new HttpContextAccessor();
         }
+
         public IActionResult Index()
         {
-            var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
-            var _user = logic.GetUserByEmail(userEmail);
-            return View();
+           var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
+           var _user = logic.GetUserByEmail(userEmail);
+           var viewmodel = new DashboardViewmodel
+           {
+               User = _user,
+               Weight = logic.GetWeightById(_user.Id),
+               FatPercentage = logic.GetFatById(_user.Id),
+               Bmi = logic.GetBmiById(_user.Id)
+           };
+            return View(viewmodel);
         }
     }
 }

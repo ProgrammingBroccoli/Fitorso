@@ -1,0 +1,26 @@
+﻿@model Fitorso.Viewmodels.ExerciseViewmodel
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Exercise</th>
+        <th>Musclegroup</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var item in @Model.FavoritExercises)
+    {
+        <tr>
+            <td>
+                @Model.User.Firstname
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.MusclegroupId
+            </td>
+            <td>
+                @item.Description
+            </td>
+        </tr>
+    }
+</table>

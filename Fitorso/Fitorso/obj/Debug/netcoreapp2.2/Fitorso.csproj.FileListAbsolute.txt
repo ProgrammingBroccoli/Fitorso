@@ -40,3 +40,6 @@ C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\Debug\netcoreapp2.2\DAL.pdb
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\bin\Debug\netcoreapp2.2\IDAL.pdb
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Dashboard\Index.g.cshtml.cs
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index-OG.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\AddWeight.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\AddFatpercentage.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Exercise\Index.g.cshtml.cs

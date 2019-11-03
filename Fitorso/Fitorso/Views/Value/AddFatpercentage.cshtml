@@ -1,0 +1,31 @@
+﻿@model Fitorso.Viewmodels.DashboardViewmodel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+    <link href="~/css/RegisterValue.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-box">
+        @using (Html.BeginForm("AddFatpercentage", "Value", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            <div class="main-box-text">
+                Add new value!
+            </div>
+            <div class="textbox-addValue">
+                @Html.TextBoxFor(m => m.FatPercentage)
+            </div>
+            @Html.HiddenFor(m => m.User.Id)
+            <button class="submit-button">Add</button>
+        }
+
+
+    </div>
+</body>
+</html>

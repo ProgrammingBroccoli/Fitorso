@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitorso", "Fitorso\Fitorso.csproj", "{886D84B4-FBC8-4959-9107-0DC93EEF1126}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitorso", "Fitorso\Fitorso.csproj", "{886D84B4-FBC8-4959-9107-0DC93EEF1126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{A1FEF5E9-1DD3-4ECA-81FC-0C79BBA224CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{A1FEF5E9-1DD3-4ECA-81FC-0C79BBA224CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDAL", "IDAL\IDAL.csproj", "{E3614130-E580-470D-8700-5E5EE634F611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDAL", "IDAL\IDAL.csproj", "{E3614130-E580-470D-8700-5E5EE634F611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{6C50B6EA-B27B-4596-96F0-2950317244D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{6C50B6EA-B27B-4596-96F0-2950317244D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{2C6F7E82-E3C9-4179-9EF6-EC663B823457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{2C6F7E82-E3C9-4179-9EF6-EC663B823457}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

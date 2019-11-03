@@ -1,4 +1,4 @@
-﻿@model object
+﻿@model Fitorso.Viewmodels.DashboardViewmodel
 
 @{
     Layout = null;
@@ -9,10 +9,34 @@
 <html>
 <head>
     <title>title</title>
+    <link href="~/css/dashboard.css" rel="stylesheet" />
 </head>
 <body>
-<div>
-    @Context.User.Claims.First(i => i.Type == System.Security.Claims.ClaimTypes.Email).Value
-</div>
+    <div>
+
+    </div>
+    <div class="boxes">
+        <div class="Box Box1">
+            <h3>Weight</h3>
+            <h4>@Model.Weight</h4>
+            @Html.ActionLink("+", "AddWeight", "Value")
+        </div>
+        <div class="Box Box2">
+            <h3>Fat%</h3>
+            <h4>@Model.FatPercentage</h4>
+            @Html.ActionLink("+", "AddFatpercentage", "value")
+        </div>
+        <div class="Box Box3">
+            <h3>BMI</h3>
+            <h4>@Model.Bmi</h4>
+            @Html.ActionLink("+", "CalcBmi", "value")
+        </div>
+        <div class="Box Box4">
+            <h3>Quote</h3>
+        </div>
+
+
+    </div>
+    @Html.ActionLink("GO TO TRAINING PAGE", "index", "Exercise")
 </body>
 </html>
