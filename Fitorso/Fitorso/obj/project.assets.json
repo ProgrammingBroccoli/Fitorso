@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "jQuery/3.4.1": {
+        "type": "package"
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4726,7 +4729,8 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "IDAL": "1.0.0",
-          "Model": "1.0.0"
+          "Model": "1.0.0",
+          "jQuery": "3.4.1"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
@@ -4739,7 +4743,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "Model": "1.0.0"
+          "Model": "1.0.0",
+          "jQuery": "3.4.1"
         },
         "compile": {
           "bin/placeholder/IDAL.dll": {}
@@ -4752,7 +4757,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "DAL": "1.0.0"
+          "DAL": "1.0.0",
+          "jQuery": "3.4.1"
         },
         "compile": {
           "bin/placeholder/Logic.dll": {}
@@ -4764,6 +4770,9 @@
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "jQuery": "3.4.1"
+        },
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -4774,6 +4783,29 @@
     }
   },
   "libraries": {
+    "jQuery/3.4.1": {
+      "sha512": "vDD5O2nuVN2rF0rTASFSJNM5ef50niEP5HsXDQyXPPZH1rBaAaLtCutHG5wvXOPmrQw+MEZHOcOk9kYmdnL/Xw==",
+      "type": "package",
+      "path": "jquery/3.4.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-3.4.1-vsdoc.js",
+        "Content/Scripts/jquery-3.4.1.js",
+        "Content/Scripts/jquery-3.4.1.min.js",
+        "Content/Scripts/jquery-3.4.1.min.map",
+        "Content/Scripts/jquery-3.4.1.slim.js",
+        "Content/Scripts/jquery-3.4.1.slim.min.js",
+        "Content/Scripts/jquery-3.4.1.slim.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-3.4.1.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.3.4.1.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -13002,7 +13034,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4",
-      "Model >= 1.0.0"
+      "Model >= 1.0.0",
+      "jQuery >= 3.4.1"
     ]
   },
   "packageFolders": {
@@ -13080,6 +13113,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.4, )"
+          },
+          "jQuery": {
+            "target": "Package",
+            "version": "[3.4.1, )"
           }
         },
         "imports": [

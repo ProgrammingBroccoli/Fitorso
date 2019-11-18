@@ -1,0 +1,22 @@
+﻿@model Fitorso.Viewmodels.ExerciseViewmodel
+<table class="table table-striped table-hover ">
+    <tr>
+        <th>Exercise</th>
+        <th>Musclegroup</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var item in Model.Exercises)
+    {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @Model.Musclegroups.SingleOrDefault(e => e.Id == item.MusclegroupId).Name
+            </td>
+            <td>
+                @item.Description
+            </td>
+        </tr>
+    }
+</table>

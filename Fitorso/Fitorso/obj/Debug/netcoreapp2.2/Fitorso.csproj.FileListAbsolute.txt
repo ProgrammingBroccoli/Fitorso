@@ -43,3 +43,7 @@ C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Vie
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\AddWeight.g.cshtml.cs
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\AddFatpercentage.g.cshtml.cs
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Exercise\Index.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Exercise\AddExerciseIndex.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Exercise\GenerateTrainingIndex.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\WeightValues.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Account\.g.cshtml.cs

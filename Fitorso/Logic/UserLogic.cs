@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using DAL;
 using Model;
@@ -84,6 +85,85 @@ namespace Logic
             var favExercises = _Context.GetFavExercisesById(id);
             return favExercises;
 
+        }
+
+        public List<Musclegroup> GetMusclegroups()
+        {
+            return _Context.GetMusclgroups();
+        }
+
+        public void RemoveFavorite(int exerciseId, int UserId)
+        {
+            _Context.RemoveFavorite(exerciseId, UserId);
+        }
+
+        public void AddFavorite(int userId, int exerciseId)
+        {
+            _Context.AddNewFavorite(exerciseId, userId);
+        }
+
+        public List<Exercise> GetExercises()
+        {
+            return _Context.GetExercises();
+        }
+
+        public List<Exercise> GenerateTraining(User user)
+        {
+            List<Exercise> scheme= new List<Exercise>();
+            List<Exercise> allExercises = new List<Exercise>();
+            allExercises = _Context.GetExercises();
+
+            var favExerises = _Context.GetFavExercisesById(user.Id);
+
+            List<Exercise> chestExercises = favExerises.Where(e => e.MusclegroupId == 1).ToList();
+            int chestCount = chestExercises.Count;
+            List<Exercise> backExercises = favExerises.Where(e => e.MusclegroupId == 2).ToList();
+            int backCount = backExercises.Count;
+            List<Exercise> legExercises = favExerises.Where(e => e.MusclegroupId == 3).ToList();
+            int legCount = legExercises.Count;
+
+            if (chestCount < 4)
+            {
+                int count = 0;
+
+                foreach (var item in chestExercises)
+                {
+                    scheme.Add(item);
+                    count++;
+                }
+            }
+            if (backCount < 4)
+            {
+                int count = 0;
+
+                foreach (var item in backExercises)
+                {
+                    scheme.Add(item);
+                    count++;
+                }
+            }
+            if (legCount < 4)
+            {
+                int count = 0;
+
+                foreach (var item in legExercises)
+                {
+                    scheme.Add(item);
+                    count++;
+                }
+            }
+
+            scheme.Add(allExercises.Find(e => e.MusclegroupId == 4));
+            scheme.Add(allExercises.Find(e => e.MusclegroupId == 5));
+            scheme.Add(allExercises.Find(e => e.MusclegroupId == 6));
+            scheme.Add(allExercises.Find(e => e.MusclegroupId == 7));
+            scheme.Add(allExercises.Find(e => e.MusclegroupId == 8));
+            return scheme;
+        }
+
+        public List<BodyMassValue> GetAllWeightById(int id)
+        {
+            return _Context.GetAllWeightById(id);
         }
     }
 }

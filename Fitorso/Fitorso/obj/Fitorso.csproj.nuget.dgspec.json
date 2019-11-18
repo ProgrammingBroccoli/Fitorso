@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             }
           },
           "imports": [
@@ -135,6 +139,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.4, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             }
           },
           "imports": [
@@ -193,6 +201,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             }
           },
           "imports": [
@@ -251,6 +263,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             }
           },
           "imports": [
@@ -305,6 +321,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             }
           },
           "imports": [

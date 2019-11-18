@@ -45,7 +45,7 @@ namespace Fitorso.Controllers
 
                 var authProperties = new AuthenticationProperties
                 {
-
+                    ExpiresUtc = DateTime.UtcNow.AddMinutes(30)
                 };
                 
                 await HttpContext.SignInAsync(

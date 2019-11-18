@@ -1,20 +1,25 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "c5cf0bd66e43c01b6109eef27650e026c287d39b"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "IDAL/1.0.0": {
         "dependencies": {
-          "Model": "1.0.0"
+          "Model": "1.0.0",
+          "jQuery": "3.4.1"
         },
         "runtime": {
           "IDAL.dll": {}
         }
       },
+      "jQuery/3.4.1": {},
       "Model/1.0.0": {
+        "dependencies": {
+          "jQuery": "3.4.1"
+        },
         "runtime": {
           "Model.dll": {}
         }
@@ -26,6 +31,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "jQuery/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vDD5O2nuVN2rF0rTASFSJNM5ef50niEP5HsXDQyXPPZH1rBaAaLtCutHG5wvXOPmrQw+MEZHOcOk9kYmdnL/Xw==",
+      "path": "jquery/3.4.1",
+      "hashPath": "jquery.3.4.1.nupkg.sha512"
     },
     "Model/1.0.0": {
       "type": "project",

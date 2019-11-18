@@ -9,6 +9,8 @@ namespace Fitorso.Viewmodels
     public class ExerciseViewmodel
     {
         public User User { get; set; }
-        public List<Exercise> FavoritExercises { get; set; }
+        public List<Exercise> FavoriteExercises { get; set; }
+        public List<Musclegroup> Musclegroups { get; set; }
+        public List<Exercise> Exercises { get; internal set; }
     }
 }

@@ -21,7 +21,7 @@ namespace DAL
         {
             users = new List<User>
             {
-                new User {Id = 1, Firstname = "Bob", Lastname = "Bouwer", Email = "Bob@Bouwers.com", Password = "Test", Height = 1.80, MembershipTypeId = 1},
+                new User {Id = 1, Firstname = "Bob", Lastname = "Bouwer", Email = "Bob", Password = "Test", Height = 1.80, MembershipTypeId = 1},
                 new User {Id = 2, Firstname = "Steve", Lastname = "Hobbs", Email = "s.Hobbs@gmail.com", Password = "Test", Height = 1.60, MembershipTypeId = 2},
                 new User {Id = 3, Firstname = "Buck", Lastname = "Buckle", Email = "BuckBuckles@Buckle.com", Password = "Test", Height = 1.75, MembershipTypeId = 2}
             };
@@ -32,17 +32,44 @@ namespace DAL
             };
             bodyMassValues = new List<BodyMassValue>
             {
-                new BodyMassValue{Id = 1, BodymassTypeId = 1, UserId = 1, Date = Convert.ToString(DateTime.Now), Value = 80.6},
-                new BodyMassValue{Id = 2, BodymassTypeId = 2, UserId = 1, Date = Convert.ToString(DateTime.Now), Value = 13.4},
-                new BodyMassValue{Id = 3, BodymassTypeId = 3, UserId = 1, Date = Convert.ToString(DateTime.Now), Value = 20.1},
-                
-                new BodyMassValue{Id = 4, BodymassTypeId = 1, UserId = 2, Date = Convert.ToString(DateTime.Now), Value = 76.9},
-                new BodyMassValue{Id = 5, BodymassTypeId = 2, UserId = 2, Date = Convert.ToString(DateTime.Now), Value = 16.9},
-                new BodyMassValue{Id = 6, BodymassTypeId = 3, UserId = 2, Date = Convert.ToString(DateTime.Now), Value = 26.5},
+                //USER 1
+                new BodyMassValue{Id = 1, BodymassTypeId = 1, UserId = 1, Date = "2019-10-11", Value = 80.6},
+                new BodyMassValue{Id = 2, BodymassTypeId = 1, UserId = 1, Date = "2019-10-12", Value = 80.7},
+                new BodyMassValue{Id = 3, BodymassTypeId = 1, UserId = 1, Date = "2019-12-13", Value = 81},
 
-                new BodyMassValue{Id = 7, BodymassTypeId = 1, UserId = 3, Date = Convert.ToString(DateTime.Now), Value = 65.9},
-                new BodyMassValue{Id = 8, BodymassTypeId = 2, UserId = 3, Date = Convert.ToString(DateTime.Now), Value = 9.8},
-                new BodyMassValue{Id = 9, BodymassTypeId = 3, UserId = 3, Date = Convert.ToString(DateTime.Now), Value = 16.9}
+                new BodyMassValue{Id = 4, BodymassTypeId = 2, UserId = 1, Date = "2019-10-11", Value = 16.2},
+                new BodyMassValue{Id = 5, BodymassTypeId = 2, UserId = 1, Date = "2019-10-12", Value = 16.4},
+                new BodyMassValue{Id = 6, BodymassTypeId = 2, UserId = 1, Date = "2019-10-13", Value = 13.4},
+
+                new BodyMassValue{Id = 7, BodymassTypeId = 3, UserId = 1, Date = "2019-10-11", Value = 20.1},
+                new BodyMassValue{Id = 8, BodymassTypeId = 3, UserId = 1, Date = "2019-10-12", Value = 20.5},
+                new BodyMassValue{Id = 9, BodymassTypeId = 3, UserId = 1, Date = "2019-10-13", Value = 19},
+                
+                //USER 2
+                new BodyMassValue{Id = 10, BodymassTypeId = 1, UserId = 2, Date = "2019-10-11", Value = 76.9},
+                new BodyMassValue{Id = 11, BodymassTypeId = 1, UserId = 2, Date = "2019-10-12", Value = 77.9},
+                new BodyMassValue{Id = 12, BodymassTypeId = 1, UserId = 2, Date = "2019-10-13", Value = 77.0},
+
+                new BodyMassValue{Id = 14, BodymassTypeId = 2, UserId = 2, Date = "2019-10-11", Value = 9.9},
+                new BodyMassValue{Id = 15, BodymassTypeId = 2, UserId = 2, Date = "2019-10-12", Value = 9.3},
+                new BodyMassValue{Id = 16, BodymassTypeId = 2, UserId = 2, Date = "2019-10-13", Value = 10.4},
+
+                new BodyMassValue{Id = 17, BodymassTypeId = 3, UserId = 2, Date = "2019-10-11", Value = 19.4},
+                new BodyMassValue{Id = 18, BodymassTypeId = 3, UserId = 2, Date = "2019-10-12", Value = 19.1},
+                new BodyMassValue{Id = 19, BodymassTypeId = 3, UserId = 2, Date = "2019-10-13", Value = 18.5},
+                
+                //USER 2
+                new BodyMassValue{Id = 20, BodymassTypeId = 1, UserId = 3, Date = "2019-10-11", Value = 77.9},
+                new BodyMassValue{Id = 21, BodymassTypeId = 1, UserId = 3, Date = "2019-10-12", Value = 78.9},
+                new BodyMassValue{Id = 22, BodymassTypeId = 1, UserId = 3, Date = "2019-10-13", Value = 78.0},
+
+                new BodyMassValue{Id = 23, BodymassTypeId = 2, UserId = 3, Date = "2019-10-11", Value = 11.9},
+                new BodyMassValue{Id = 24, BodymassTypeId = 2, UserId = 3, Date = "2019-10-12", Value = 11.3},
+                new BodyMassValue{Id = 25, BodymassTypeId = 2, UserId = 3, Date = "2019-10-13", Value = 12.4},
+
+                new BodyMassValue{Id = 26, BodymassTypeId = 3, UserId = 3, Date = "2019-10-11", Value = 17.4},
+                new BodyMassValue{Id = 27, BodymassTypeId = 3, UserId = 3, Date = "2019-10-12", Value = 17.1},
+                new BodyMassValue{Id = 28, BodymassTypeId = 3, UserId = 3, Date = "2019-10-13", Value = 18.5},
             };
             BodymassTypes = new List<BodymassType>
             {
@@ -96,16 +123,16 @@ namespace DAL
             userFavorites = new List<Exercise_User_Favorite>
             {
                 new Exercise_User_Favorite{UserId = 1, ExerciseId = 1},
-                new Exercise_User_Favorite{UserId = 1, ExerciseId = 2},
-                new Exercise_User_Favorite{UserId = 1, ExerciseId = 3},
+                new Exercise_User_Favorite{UserId = 1, ExerciseId = 4},
+                new Exercise_User_Favorite{UserId = 1, ExerciseId = 7},
 
+                new Exercise_User_Favorite{UserId = 2, ExerciseId = 1},
                 new Exercise_User_Favorite{UserId = 2, ExerciseId = 4},
-                new Exercise_User_Favorite{UserId = 2, ExerciseId = 5},
-                new Exercise_User_Favorite{UserId = 2, ExerciseId = 6},
+                new Exercise_User_Favorite{UserId = 2, ExerciseId = 7},
 
+                new Exercise_User_Favorite{UserId = 3, ExerciseId = 1},
+                new Exercise_User_Favorite{UserId = 3, ExerciseId = 4},
                 new Exercise_User_Favorite{UserId = 3, ExerciseId = 7},
-                new Exercise_User_Favorite{UserId = 3, ExerciseId = 8},
-                new Exercise_User_Favorite{UserId = 3, ExerciseId = 9},
             };
         }
 
@@ -203,6 +230,33 @@ namespace DAL
             }
 
             return _exercises;
+        }
+
+        public List<Musclegroup> GetMusclgroups()
+        {
+            return musclegroups;
+        }
+
+        public void RemoveFavorite(int exerciseId, int UserId)
+        {
+            var exercise = userFavorites.SingleOrDefault(e => e.UserId == UserId && e.ExerciseId == exerciseId);
+            userFavorites.Remove(exercise);
+        }
+
+        public void AddNewFavorite(int exerciseId, int UserId)
+        {
+            userFavorites.Add( new Exercise_User_Favorite {ExerciseId = exerciseId, UserId = UserId} );
+        }
+
+        public List<Exercise> GetExercises()
+        {
+            return exercises;
+        }
+
+        public List<BodyMassValue> GetAllWeightById(int id)
+        {
+            var values = bodyMassValues.Where(i => i.UserId == id && i.BodymassTypeId == 1).ToList();
+            return values;
         }
     }
 

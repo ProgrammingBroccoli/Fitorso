@@ -71,5 +71,26 @@ namespace Fitorso.Controllers
             var bmi = logic.CalcBmi(_viewmodel.Weight, _viewmodel.Height, _user.Id);
             return RedirectToAction("index", "Dashboard");
         }
+
+        public IActionResult WeightValues()
+        {
+            var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
+            var _user = logic.GetUserByEmail(userEmail);
+            var viewmodel = new ValueViewmodel
+            {
+                Values = logic.GetAllWeightById(_user.Id)
+            };
+            return View(viewmodel);
+        }
+
+        [HttpGet]
+        public JsonResult PopulationChart()
+        {
+            var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
+             var _user = logic.GetUserByEmail(userEmail);
+
+             var populationList = logic.GetAllWeightById(_user.Id);
+            return Json(populationList);
+        }
     }
 }

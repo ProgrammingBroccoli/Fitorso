@@ -4,25 +4,24 @@
         <th>Exercise</th>
         <th>Musclegroup</th>
         <th>Description</th>
-        <th>Remove</th>
     </tr>
-    @foreach (var item in @Model.FavoriteExercises)
+    @foreach (var item in Model.Exercises)
     {
+
         <tr>
             <td>
                 @item.Name
             </td>
             <td>
-                @Model.Musclegroups.SingleOrDefault(e => e.Id == item.Id).Name
+                @Model.Musclegroups.SingleOrDefault(m => m.Id == item.MusclegroupId).Name
             </td>
             <td>
                 @item.Description
             </td>
             <td>
-                @Html.ActionLink("Remove", "RemoveFavorite", "Exercise",  new{exerciseId = item.Id, UserId = Model.User.Id}, null)
+                @Html.ActionLink("Add to Favorite", "AddFavorite", "Exercise", new {exerciseId = item.Id, UserId = Model.User.Id}, null)
             </td>
         </tr>
     }
+
 </table>
-@Html.ActionLink("Add new exercise", "AddExerciseIndex", "Exercise")
-@Html.ActionLink("Generate training", "GenerateTrainingIndex", "Exercise")
