@@ -14,7 +14,10 @@
 </head>
 <body>
     <div>
-
+        <ul>
+            <li>@Html.ActionLink("Account", "Profile", "Account")</li>
+            <li>@Html.ActionLink("Training", "Index", "Exercise")</li>
+        </ul>
     </div>
     <div class="boxes">
         <div class="Box Box1">
@@ -24,16 +27,17 @@
         </div>
         <div class="Box Box2">
             <h3>Fat%</h3>
-            <h4>@Model.FatPercentage</h4>
+            <h4>@Html.ActionLink(@Model.FatPercentage.ToString(), "FatValues", "Value")</h4>
             @Html.ActionLink("+", "AddFatpercentage", "value")
         </div>
         <div class="Box Box3">
             <h3>BMI</h3>
-            <h4>@Model.Bmi</h4>
+            <h4>@Html.ActionLink(@Model.Bmi.ToString(), "BmiValues", "Value")</h4>
             @Html.ActionLink("+", "CalcBmi", "value")
         </div>
         <div class="Box Box4">
             <h3>Quote</h3>
+            <h2>@Model.Quote</h2>
         </div>
 
 

@@ -7,11 +7,13 @@ using Fitorso.Viewmodels;
 using Logic;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace Fitorso.Controllers
 {
+    [Authorize]
     public class ValueController : Controller
     {
         private UserLogic logic;
@@ -83,14 +85,26 @@ namespace Fitorso.Controllers
             return View(viewmodel);
         }
 
-        [HttpGet]
-        public JsonResult PopulationChart()
+        public IActionResult FatValues()
         {
             var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
-             var _user = logic.GetUserByEmail(userEmail);
+            var _user = logic.GetUserByEmail(userEmail);
+            var viewmodel = new ValueViewmodel
+            {
+                Values = logic.GetAllFatById(_user.Id)
+            };
+            return View(viewmodel);
+        }
 
-             var populationList = logic.GetAllWeightById(_user.Id);
-            return Json(populationList);
+        public IActionResult BmiValues()
+        {
+            var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
+            var _user = logic.GetUserByEmail(userEmail);
+            var viewmodel = new ValueViewmodel
+            {
+                Values = logic.GetAllBmiById(_user.Id)
+            };
+            return View(viewmodel);
         }
     }
 }

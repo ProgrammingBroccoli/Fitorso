@@ -165,5 +165,27 @@ namespace Logic
         {
             return _Context.GetAllWeightById(id);
         }
+
+        public List<BodyMassValue> GetAllFatById(int id)
+        {
+            return _Context.GetAllFatById(id);
+
+        }
+
+        public List<BodyMassValue> GetAllBmiById(int id)
+        {
+            return _Context.GetAllBmiById(id);
+        }
+
+        public string GetQuote()
+        {
+            Random random = new Random();
+            return _Context.GetQuoteById(random.Next(1, 8));
+        }
+
+        public List<MembershipType> GetMembershipTypes()
+        {
+           return  _Context.GetMembershipTypes();
+        }
     }
 }

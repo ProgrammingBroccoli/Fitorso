@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Fitorso.Controllers
 {
-   
+    [Authorize]
     public class DashboardController : Controller
     {
         private UserLogic logic;
@@ -33,7 +33,8 @@ namespace Fitorso.Controllers
                User = _user,
                Weight = logic.GetWeightById(_user.Id),
                FatPercentage = logic.GetFatById(_user.Id),
-               Bmi = logic.GetBmiById(_user.Id)
+               Bmi = logic.GetBmiById(_user.Id),
+               Quote = logic.GetQuote()
            };
             return View(viewmodel);
         }

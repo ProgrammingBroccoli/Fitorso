@@ -10,5 +10,6 @@ namespace Fitorso.Viewmodels
     public class AccountViewmodel
     {
         public User User { get; set; }
+        public List<MembershipType> MembershipTypes { get; set; }
     }
 }

@@ -47,7 +47,7 @@ namespace Fitorso
             //    });
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(o =>
             {
-                o.LoginPath = new PathString("/Account/Login");
+                o.LoginPath = new PathString("/Account/Index");
                 //o.LogoutPath = new PathString("/Logout");
             });
             services.AddSession(options =>
@@ -82,7 +82,7 @@ namespace Fitorso
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Account}/{action=Index}/{id?}");
             });
         }
     }

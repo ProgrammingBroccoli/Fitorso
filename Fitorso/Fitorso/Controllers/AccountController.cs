@@ -1,7 +1,8 @@
 ﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
+    using System.Runtime.InteropServices.WindowsRuntime;
+    using System.Security.Claims;
     using System.Threading;
     using System.Threading.Tasks;
 using Fitorso.Viewmodels;
@@ -15,11 +16,11 @@ namespace Fitorso.Controllers
 {
     public class AccountController : Controller
     {
-        public UserLogic _UserLogic;
+        public UserLogic logic;
 
         public AccountController()
         {
-            _UserLogic = new UserLogic();
+            logic = new UserLogic();
         }
         //Login Page
         public IActionResult Index()
@@ -32,7 +33,7 @@ namespace Fitorso.Controllers
         public async Task<ActionResult> Login(AccountViewmodel viewmodel)
         {
             var user = viewmodel.User;
-            var result = _UserLogic.ValidateUser(user.Email, user.Password);
+            var result = logic.ValidateUser(user.Email, user.Password);
             if (result != null)
             {
                 //ValidatedUser
@@ -68,8 +69,20 @@ namespace Fitorso.Controllers
         public async Task<ActionResult> Register(AccountViewmodel viewmodel)
         {
             var user = viewmodel.User;
-            _UserLogic.RegisterUser(user.Email, user.Password);
+            logic.RegisterUser(user.Email, user.Password);
             return View("Index", viewmodel);
+        }
+
+        public IActionResult Profile()
+        {
+            var userEmail = HttpContext.User.Claims.Where(i => i.Type == ClaimTypes.Email).First().Value;
+            var _user = logic.GetUserByEmail(userEmail);
+            var viewmodel = new AccountViewmodel
+            {
+                User = _user,
+                MembershipTypes = logic.GetMembershipTypes()
+            };
+            return View(viewmodel);
         }
     }
 }

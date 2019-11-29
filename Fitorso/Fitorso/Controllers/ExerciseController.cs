@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Fitorso.Controllers
 {
+    [Authorize]
     public class ExerciseController : Controller
     {
         private UserLogic logic;
@@ -31,10 +32,10 @@ namespace Fitorso.Controllers
         }
 
         [HttpGet]
-        public ActionResult RemoveFavorite(int exerciseId, int userId)
+        public void RemoveFavorite(int exerciseId, int userId)
         {
             logic.RemoveFavorite(exerciseId, userId);
-            return RedirectToAction("Index", "Exercise");
+            //return RedirectToAction("Index", "Exercise");
         }
 
         public IActionResult AddExerciseIndex()

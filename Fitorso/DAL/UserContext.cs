@@ -17,6 +17,7 @@ namespace DAL
         public List<Exercise> exercises;
         public List<Musclegroup> musclegroups;
         public List<Exercise_User_Favorite> userFavorites;
+        public List<Quote> quotes;
         public UserContext()
         {
             users = new List<User>
@@ -133,6 +134,17 @@ namespace DAL
                 new Exercise_User_Favorite{UserId = 3, ExerciseId = 1},
                 new Exercise_User_Favorite{UserId = 3, ExerciseId = 4},
                 new Exercise_User_Favorite{UserId = 3, ExerciseId = 7},
+            };
+            quotes = new List<Quote>
+            {
+                new Quote{Id = 1, Text = "Aspire to inspire before we expire"},
+                new Quote{Id = 2, Text = "Fitness is like a relationship. You can’t cheat and expect it to work"},
+                new Quote{Id = 3, Text = "Work hard in silence. Let success be your noise"},
+                new Quote{Id = 4, Text = "Rome wasn’t built in a day, but they worked on it every single day"},
+                new Quote{Id = 5, Text = "Strive for progress, not perfection"},
+                new Quote{Id = 6, Text = "All progress takes place outside the comfort zone"},
+                new Quote{Id = 7, Text = "Well done is better than well said"},
+                new Quote{Id = 8, Text = "A champion is someone who gets up when they can’t"},
             };
         }
 
@@ -257,6 +269,30 @@ namespace DAL
         {
             var values = bodyMassValues.Where(i => i.UserId == id && i.BodymassTypeId == 1).ToList();
             return values;
+        }
+
+        public List<BodyMassValue> GetAllFatById(int id)
+        {
+            var values = bodyMassValues.Where(i => i.UserId == id && i.BodymassTypeId == 2).ToList();
+            return values;
+        }
+
+        public List<BodyMassValue> GetAllBmiById(int id)
+        {
+            var values = bodyMassValues.Where(i => i.UserId == id && i.BodymassTypeId == 3).ToList();
+            return values;
+        }
+
+        public string GetQuoteById(int id)
+        {
+            var quote = quotes.SingleOrDefault(i => i.Id == id).Text;
+            return quote;
+        }
+
+        public List<MembershipType> GetMembershipTypes()
+        {
+            return membershipTypes;
+            
         }
     }
 

@@ -47,3 +47,7 @@ C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Vie
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Exercise\GenerateTrainingIndex.g.cshtml.cs
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\WeightValues.g.cshtml.cs
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Account\.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\FatValues.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Value\BmiValues.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_NavBar.g.cshtml.cs
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\Fitorso\obj\Debug\netcoreapp2.2\Razor\Views\Account\Profile.g.cshtml.cs

@@ -1,5 +1,5 @@
 ﻿@model Fitorso.Viewmodels.ExerciseViewmodel
-<table class="table table-striped table-hover ">
+<table class="table table-striped table-hover ", id="table">
     <tr>
         <th>Exercise</th>
         <th>Musclegroup</th>
@@ -19,10 +19,46 @@
                 @item.Description
             </td>
             <td>
-                @Html.ActionLink("Remove", "RemoveFavorite", "Exercise",  new{exerciseId = item.Id, UserId = Model.User.Id}, null)
+                @Html.ActionLink("Remove",
+                    "",
+                    null, new{ onclick = "Delete(" +item.Id + "," +Model.User.Id + ");"})
+                
             </td>
         </tr>
     }
 </table>
 @Html.ActionLink("Add new exercise", "AddExerciseIndex", "Exercise")
 @Html.ActionLink("Generate training", "GenerateTrainingIndex", "Exercise")
+<script>
+    function Delete(exerciseId, userId) {
+        alert('function called');
+        $.ajax({
+            type: "Post",
+            url: '/Exercise/RemoveFavorite',
+            data: {
+                'exerciseId': exerciseId,
+                'userId': userId
+            }
+        });
+        document.getElementById("table").deleteRow(1);
+        alert('succeed');
+    }
+</script>
+
+function SaveTreasure() {
+var title = document.getElementById("Title").value;
+var text = document.getElementById("Text").value;
+var location = userPin.getLocation();
+var picture = '';
+$.ajax({
+type: "Post",
+url: '/Game/SaveTreasure',
+data: {
+'title' : title,
+'text': text,
+'latitude': location.latitude,
+'longitude': location.longitude,
+'picture' : picture
+}
+});
+}
