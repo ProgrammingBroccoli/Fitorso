@@ -12,3 +12,5 @@ C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyI
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.dll
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\System.Data.SqlClient.dll
+C:\Users\Ruben\Desktop\Fitorso\Fitorso\DAL\bin\Debug\netcoreapp2.2\System.Data.SqlClient.xml

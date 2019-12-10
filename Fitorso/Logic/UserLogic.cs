@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DAL;
+using IDAL;
 using Model;
 
 namespace Logic
 {
     public class UserLogic
     {
-        public UserContext _Context;
+        private IUserContext _Context;
 
         public UserLogic()
         {
