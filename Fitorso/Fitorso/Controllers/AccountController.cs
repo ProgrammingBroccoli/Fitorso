@@ -69,7 +69,7 @@ namespace Fitorso.Controllers
         public async Task<ActionResult> Register(AccountViewmodel viewmodel)
         {
             var user = viewmodel.User;
-            logic.RegisterUser(user.Email, user.Password);
+            logic.RegisterUser(user.Firstname, user.Lastname, user.Email, user.Password, user.Height);
             return View("Index", viewmodel);
         }
 

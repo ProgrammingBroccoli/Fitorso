@@ -15,8 +15,8 @@
             @Html.PasswordFor(m => m.User.Password, new { @class = "login-textbox" })
             <br>
             <button class="login-button">Login</button>
-
-                
         </form>
+        <h3>Not registered yet?</h3>
+        @Html.ActionLink("Not registered yet?", "Register");
     </div>
 }

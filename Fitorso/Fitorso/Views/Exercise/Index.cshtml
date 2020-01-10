@@ -13,7 +13,7 @@
                 @item.Name
             </td>
             <td>
-                @Model.Musclegroups.SingleOrDefault(e => e.Id == item.Id).Name
+                @Model.Musclegroups.SingleOrDefault(e => e.Id == item.MusclegroupId).Name
             </td>
             <td>
                 @item.Description
@@ -44,21 +44,3 @@
         alert('succeed');
     }
 </script>
-
-function SaveTreasure() {
-var title = document.getElementById("Title").value;
-var text = document.getElementById("Text").value;
-var location = userPin.getLocation();
-var picture = '';
-$.ajax({
-type: "Post",
-url: '/Game/SaveTreasure',
-data: {
-'title' : title,
-'text': text,
-'latitude': location.latitude,
-'longitude': location.longitude,
-'picture' : picture
-}
-});
-}

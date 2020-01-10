@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="jQuery" Version="3.4.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
   </ItemGroup>
 
   <ItemGroup>

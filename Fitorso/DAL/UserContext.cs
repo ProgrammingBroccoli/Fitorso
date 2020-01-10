@@ -8,7 +8,7 @@ using Model;
 
 namespace DAL
 {
-    public class UserContext : IUserContext
+    public class UserContext
     {
         public List<User> users;
         public List<MembershipType> membershipTypes;
@@ -154,9 +154,9 @@ namespace DAL
             return User;
         }
 
-        public void RegisterUser(string email, string password)
+        public void RegisterUser(string firstname, string lastname, string email, string password, double length)
         {
-            users.Add(new User {Email = email, Password = password, MembershipTypeId = 1});
+            users.Add(new User { Email = email, Password = password, MembershipTypeId = 1 });
         }
 
         public double GetWeightById(int id)

@@ -14,5 +14,3 @@ C:\Users\Ruben\Desktop\Fitorso\Fitorso\Logic\bin\Debug\netcoreapp2.2\DAL.pdb
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Logic\bin\Debug\netcoreapp2.2\IDAL.pdb
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Logic\bin\Debug\netcoreapp2.2\Model.pdb
 C:\Users\Ruben\Desktop\Fitorso\Fitorso\Logic\obj\Debug\netcoreapp2.2\Logic.csproj.CopyComplete
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\Logic\bin\Debug\netcoreapp2.2\System.Data.SqlClient.dll
-C:\Users\Ruben\Desktop\Fitorso\Fitorso\Logic\bin\Debug\netcoreapp2.2\System.Data.SqlClient.xml
